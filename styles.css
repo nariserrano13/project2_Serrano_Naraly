@@ -1,0 +1,539 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+    display:block;
+}
+/*FONT FAMILIES
+  font-family: 'Montserrat';
+  font-family: 'Playfair Display';
+	font-family: 'Roboto', sans serif;
+*/
+
+body{
+	font-family: 'Roboto', sans serif;
+	background-color: #ffefdf;
+}
+/*************Hamburger Menu BEGINS***************
+*/
+.hamburger{
+  background:none;
+  position:absolute;
+  top:0;
+  right:0;
+  line-height:45px;
+  padding:5px 15px 0px 15px;
+  color:#a7582d;
+  border:0;
+  font-size:1.4em;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.cross{
+  background:none;
+  position:absolute;
+  top:0px;
+  right:0;
+  padding:7px 15px 0px 15px;
+  color:#a7582d;
+  border:0;
+  font-size:3em;
+  line-height:65px;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.menu{z-index:1000000; font-weight:bold; font-size:0.8em; width:100%; background:#fff7f0;  position:absolute; text-align:center; font-size:12px; font-family: 'Montserrat';}
+.menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
+.menu li {display: block;   padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+.menu li:hover{display: block;    background:#fffaf5; padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+.menu ul li a { text-decoration:none;  margin: 0px; color:#666;}
+.menu ul li a:hover {  color: #666; text-decoration:none;}
+.menu a{text-decoration:none; color:#666;}
+.menu a:hover{text-decoration:none; color:#666;}
+
+/*************Hamburger Menu ENDS***************
+*/
+/*************Index page BEGINS***************
+*/
+.desktop_menu{
+	display: none;
+}
+h2{
+  font-family: 'Playfair Display';
+	line-height: 6.5rem;
+}
+.name{
+	padding-top: 67vh;
+	padding-left: 4vw;
+}
+.first_name{
+	color: #2d294b;
+	font-size: 4rem;
+	line-height: 3vh;
+}
+.last_name{
+	font-size: 4.8rem;
+	color: #1f1b3f;
+	font-style: italic;
+}
+footer{
+	padding-top: 4px;
+	background-color: #a7582d;
+	width: 100%;
+	position: fixed;
+	bottom: 12%;
+}
+
+/*************** About page BEGINS*******************
+*/
+.desktop_about_menu{
+	display: none;
+}
+.img_about{
+	width:100%;
+}
+.desktop_about_img{
+	display: none;
+}
+.desktop_quote_padding{
+	display: none;
+}
+.mobile_horizontal_line{
+	display: block;
+	height: 2px;
+	background-color: #a7582d;
+	width: 100%;
+	margin-top: 50px;
+}
+.mobile_vertical_line{
+	border-left: 2px solid #a7582d;
+  height: 110%;
+  position: absolute;
+	left: 4.5%;
+  margin-left: -3px;
+  top: 0;
+}
+figure{
+	padding-top: 10px;
+	padding-left: 20%;
+}
+figcaption{
+	font-family: 'Roboto', sans serif;
+	font-size: .5rem;
+	text-align: right;
+	color: #c4bbb1;
+}
+.about_horizontal_line{
+	display: none;
+}
+.mobile_quote_padding{
+	position: absolute;
+	top: 200px;
+	left: 7%;
+	max-width: 48%;
+}
+article{
+	 color: #1f1b3f;
+}
+.about_padding{
+	padding-top: 20px;
+	padding-left: 9%;
+	padding-right: 9%;
+}
+.about_p{
+	font-size: .85rem;
+	line-height: 120%;
+}
+
+/* ----------------about page Bottom styling---------------
+*/
+.about_bottom{
+  position: relative;
+  justify-content: center;
+  align-items: center;
+	margin: 0 auto;
+  width: 100%;
+	padding: 5% 0 6% 0;
+
+}
+.button_center{
+	text-align: center;
+	padding: 3% 0;
+}
+.resumebutton{
+  display: inline-block;
+  position: relative;
+  font-size:1.1rem;
+	align-items: center;
+	text-align: center;
+	margin: 0 auto;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Playfair Display', sans-serif;
+  border-width: .07em;
+  border-style: solid;
+  padding: .6em 5em;
+  border-radius: 1.7px;
+}
+
+.button-accent{
+    color:#a7582d;
+}
+
+.button-accent:hover,
+.button-accent:focus{
+  background:#a7582d;
+  color: #ffe7cf;
+}
+
+.oremail{
+  position: relative;
+	max-width: 100%;
+	text-align: center;
+  top: auto;
+  font-family: 'Playfair Display', sans-serif;
+  letter-spacing: .15em;
+  font-size: 14px;
+  color: #1f1b3f;
+	padding-top: 10px;
+}
+
+@media (min-width: 370px) {
+	.name{
+		padding-top: 65vh;
+	}
+	.first_name{
+		font-size: 5rem;
+		line-height: 4vh;
+	}
+	.last_name{
+		font-size: 5.4rem;
+	}
+	.mobile_quote_padding{
+		top: 225px;
+	}
+	.about_padding{
+    padding-top: 15px;
+	}
+}
+@media (min-width: 390px) {
+	.mobile_quote_padding{
+		top: 230px;
+	}
+	.about_padding{
+		padding-top: 10px;
+	}
+}
+@media (min-width: 450px) {
+	.name{
+		padding-top: 63vh;
+	}
+	.first_name{
+		font-size: 5rem;
+		line-height: 6vh;
+	}
+	.last_name{
+		font-size: 6rem;
+	}
+	.mobile_quote_padding{
+		top: 250px;
+	}
+	.about_padding{
+		padding-top: 20px;
+	}
+}
+@media (min-width: 477px) and (max-width:530px) {
+	.mobile_quote_padding{
+		top: 255px;
+	}
+	.about_padding{
+		padding-top: 20px;
+	}
+	.mobile_vertical_line {
+		height: 110%;
+	}
+}
+@media (min-width: 500px) {
+	.first_name{
+		font-size: 5rem;
+	}
+	.last_name{
+		font-size: 6rem;
+	}
+	.mobile_vertical_line {
+		height: 115%;
+	}
+	.mobile_quote_padding{
+		top: 280px;
+	}
+	.about_padding{
+		padding-top: 40px;
+	}
+}
+@media (min-width: 530px) {
+	.mobile_quote_padding{
+		top: 300px;
+	}
+	.about_padding{
+		padding-top: 50px;
+	}
+	.about_bottom{
+		padding-top: 3%;
+	}
+	.mobile_vertical_line {
+		height: 120%;
+	}
+}
+
+@media (min-width: 600px) {
+	.name{
+		padding-top: 60vh;
+	}
+	.first_name{
+		font-size: 6.5rem;
+    line-height: 9vh;
+	}
+	.last_name{
+		font-size: 7.5rem;
+	}
+	.mobile_vertical_line {
+		height: 125%;
+	}
+	.mobile_quote_padding{
+		top: 310px;
+	}
+	.about_padding{
+		padding-top: 30px;
+	}
+}
+@media (min-width:620px) {
+	.mobile_quote_padding{
+		top: 330px;
+	}
+	.about_padding{
+		padding-top: 40px;
+	}
+}
+@media (min-width:720px) {
+	.first_name{
+		font-size: 7.5rem;
+		 line-height: 12vh;
+	}
+	.last_name{
+		font-size: 8.5rem;
+	}
+	.mobile_vertical_line {
+    height: 130%;
+	}
+	.mobile_quote_padding{
+		top: 350px;
+	}
+	.about_padding{
+		padding-top: 40px;
+	}
+}
+@media (min-width:780px) {
+	.mobile_quote_padding{
+		top: 370px;
+	}
+	.about_padding{
+		padding-top: 40px;
+	}
+	.mobile_vertical_line {
+		height: 135%;
+	}
+}
+@media (min-width:840px) {
+	.mobile_quote_padding{
+		top: 410px;
+	}
+	.about_padding{
+		padding-top: 40px;
+	}
+}
+@media (min-width:900px) {
+	.menu, .hamburger, .cross{
+		display: none;
+	}
+	.desktop_menu{
+		display: block;
+	}
+	.desktop_menu{
+	position: fixed;
+	font-family: 'Montserrat';
+	right: 2em;
+	padding: 1em;
+	z-index: 90;
+}
+	.desktop_menu ul{
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+	.desktop_menu ul li{
+			display: inline-block;
+			position: relative;
+			margin: 1em;
+	}
+	.desktop_menu a{
+		font-weight: 400;
+		text-decoration: none;
+		text-transform: lowercase;
+		font-size: 1.25em;
+		color: #1f1b3f;
+		padding: .5em;
+	}
+	.desktop_menu a:hover,
+	.desktop_menu a:focus{
+		color: black;
+		font-weight: 400;
+	}
+
+	.desktop_menu a::before{
+		content: '';
+		display: block;
+		height: .2em;
+		background-color: #a7582d;
+		border-radius: 1px;
+		transition: all ease-in-out 250ms;
+		position: absolute;
+		top: 1.2em;
+		width: 0%
+	}
+	.desktop_menu a:hover::before{
+		width:100%
+	}
+/*********************about desktop menu style. needed to be diff color
+**/
+	.desktop_about_menu{
+		display: block;
+	}
+	.desktop_about_menu{
+	position: fixed;
+	font-family: 'Montserrat';
+	right: 2em;
+	padding: 1em;
+	z-index: 90;
+	}
+	.desktop_about_menu ul{
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+	.desktop_about_menu ul li{
+			display: inline-block;
+			position: relative;
+			margin: 1em;
+	}
+	.desktop_about_menu a{
+		font-weight: 400;
+		text-decoration: none;
+		text-transform: lowercase;
+		font-size: 1.25em;
+		color: #ffefdf;
+		padding: .5em;
+	}
+	.desktop_about_menu a:hover,
+	.desktop_about_menu a:focus{
+		color: black;
+		font-weight: 400;
+	}
+	.desktop_about_menu a::before{
+		content: '';
+		display: block;
+		height: .2em;
+		background-color: #a7585d;
+		border-radius: 1px;
+		transition: all ease-in-out 250ms;
+		position: absolute;
+		top: 1.2em;
+		width: 0%
+	}
+	.desktop_about_menu a:hover::before{
+		width:100%
+	}
+/***************about desktop menu style ENDS
+**/
+	.name{
+	  padding-top: 54vh;
+	}
+	.first_name{
+		font-size: 8.5rem;
+		 line-height: 17vh;
+	}
+	.last_name{
+		font-size: 9.5rem;
+	}
+	.mobile_horizontal_line{
+		display: none;
+	}
+	.mobile_vertical_line{
+		display: none;
+	}
+	.mobile_about_img{
+		display: none;
+	}
+	.mobile_quote_padding{
+		display: none;
+	}
+	.desktop_about_img{
+		display: block;
+	}
+	figure{
+	 padding: 0 0;
+	}
+	.about_horizontal_line{
+		display: block;
+		padding-top: 3px;
+		background-color: #a7582d;
+		width: 90%;
+	}
+	h3{
+		font-weight: normal;
+	}
+	.desktop_quote_padding{
+		display: block;
+		padding-top: 1%;
+		padding-left: 9%;
+		padding-right: 9%;
+	}
+	.desktop_quote_style{
+		font-family: 'Playfair Display';
+		color: #1f1b3f;
+		font-size: 1.8rem;
+		letter-spacing: .05rem;
+		line-height: 1.9rem;
+	}
+	.about_padding{
+		padding-top: 25px;
+	}
+	.button_center{
+		float: left;
+		padding-left: 20%;
+	}
+	.oremail{
+		float:left;
+		padding-left: 5%;
+		padding-top: 35px;
+		text-align: center;
+	}
+}
+@media (min-width:1100px) {
+	.name{
+	  padding-top: 50vh;
+	}
+	.first_name{
+		font-size: 9.5rem;
+		 line-height: 19vh;
+	}
+	.last_name{
+		font-size: 10.5rem;
+	}
+}
