@@ -17,6 +17,17 @@ body{
 	font-family: 'Roboto', sans serif;
 	background-color: #ffefdf;
 }
+
+/* STICKY FOOTER*/
+.container{
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+.wrapper{
+	flex: 1;
+}
+/* STICKY FOOTER*/
 /*************Hamburger Menu BEGINS***************
 */
 .hamburger{
@@ -204,6 +215,67 @@ article{
   color: #1f1b3f;
 	padding-top: 10px;
 }
+
+/* ------------------projects page styling for the accordion----------------------*/
+#panels{
+  margin-top: 1.5em;
+  position: absolute;
+}
+
+.ui-accordion-header{
+  display:block;
+  color: #1f1b3f;
+  font-family: Playfair Display;
+  font-weight:400;
+  line-height: 6vh;
+  font-size: 2em;
+  padding-left: 1em;
+  z-index: 99;
+}
+
+.ui-accordion-header:focus {
+  outline:0;
+  box-shadow: none;
+}
+
+.ui-accordion-header:hover {
+  outline:0;
+  box-shadow: none;
+  font-style: italic;
+}
+
+.project_content{
+  padding-left: 5.5em;
+  padding-right: 5.5em;
+  padding-bottom: 5.5em;
+  font-family: 'Roboto'; sans serif;
+  font-size: .8em;
+  line-height: 1.5em;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content:center;
+}
+
+.project_content img{
+  max-width: 100%;
+  position: ;
+}
+
+.project_content p{
+  padding-right: 2em;
+  margin-bottom: ;
+  max-width: ;
+
+}
+
+
+
+/*-------------- MEDIA ------------------*/
+
 
 @media (min-width: 370px) {
 	.name{
