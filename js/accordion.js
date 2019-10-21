@@ -16,5 +16,3 @@ function myFunction2() {
     x.style.display = "none";
   }
 }
-
-​

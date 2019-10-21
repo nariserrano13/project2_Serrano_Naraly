@@ -14,12 +14,12 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
 */
 
 body{
-	font-family: 'Roboto', sans serif;
+	font-family: 'Montserrat';
 	background-color: #ffefdf;
 }
 
-/* STICKY FOOTER*/
-.container{
+/************* STICKY FOOTER **********************/
+#container{
 	display: flex;
 	min-height: 100vh;
 	flex-direction: column;
@@ -27,7 +27,8 @@ body{
 .wrapper{
 	flex: 1;
 }
-/* STICKY FOOTER*/
+/************** STICKY FOOTER *********************/
+
 /*************Hamburger Menu BEGINS***************
 */
 .hamburger{
@@ -43,7 +44,7 @@ body{
   font-weight:bold;
   cursor:pointer;
   outline:none;
-  z-index:10000000000000;
+	z-index:10000000000000;
 }
 .cross{
   background:none;
@@ -218,23 +219,25 @@ article{
 
 /* ------------------projects page styling for the accordion----------------------*/
 #panels{
-  margin-top: 1.5em;
-  position: absolute;
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	margin-bottom: 30px;
 }
 
 .ui-accordion-header{
-  display:block;
   color: #1f1b3f;
   font-family: Playfair Display;
   font-weight:400;
-  line-height: 6vh;
-  font-size: 2em;
+  line-height: 6.3vh;
+  font-size: 1.8rem;
+  padding-top: 3rem;
   padding-left: 1em;
   z-index: 99;
 }
 
 .ui-accordion-header:focus {
-  outline:0;
+  outline: 0;
   box-shadow: none;
 }
 
@@ -244,36 +247,39 @@ article{
   font-style: italic;
 }
 
-.project_content{
-  padding-left: 5.5em;
-  padding-right: 5.5em;
-  padding-bottom: 5.5em;
-  font-family: 'Roboto'; sans serif;
-  font-size: .8em;
-  line-height: 1.5em;
-
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  align-content:center;
+.project_header p{
+	font-size: 1rem;
+	color: #a7582d;
+	padding-left: 5px;
 }
 
-.project_content img{
-  max-width: 100%;
-  position: ;
+.project_content{
+	background-color: #f2dcc7;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	font-size: .8rem;
+	padding: 10px 10px 5px 26px;
 }
 
 .project_content p{
-  padding-right: 2em;
-  margin-bottom: ;
-  max-width: ;
-
+	line-height: 1rem;
 }
 
+.project_content img{
+  max-width: 200px;
+	justify-content: center;
+}
 
+.project_content figure{
+ 	padding-left: 10px;
+	padding-bottom: 10px;
+	align-items: center;
+}
 
+.work_footer{
+	display: none;
+}
 /*-------------- MEDIA ------------------*/
 
 
@@ -348,6 +354,14 @@ article{
 	.about_padding{
 		padding-top: 40px;
 	}
+	.project_content figure {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+	}
+	.project_lightbox img{
+		margin-left: 15px;
+	}
 }
 @media (min-width: 530px) {
 	.mobile_quote_padding{
@@ -410,6 +424,10 @@ article{
 	.about_padding{
 		padding-top: 40px;
 	}
+	.ui-accordion-header{
+		line-height: 6.3vh;
+		font-size: 2rem;
+	}
 }
 @media (min-width:780px) {
 	.mobile_quote_padding{
@@ -422,6 +440,18 @@ article{
 		height: 135%;
 	}
 }
+@media (min-width: 800px) {
+	.ui-accordion-header{
+	  line-height: 6.3vh;
+	  font-size: 2rem;
+	}
+	.project_content img{
+	  max-width: 350px;
+		max-height: 600px;
+		justify-content: center;
+	}
+}
+
 @media (min-width:840px) {
 	.mobile_quote_padding{
 		top: 410px;
@@ -435,10 +465,10 @@ article{
 		display: none;
 	}
 	.desktop_menu{
-		display: block;
+		display: flex;
 	}
 	.desktop_menu{
-	position: fixed;
+	justify-content: flex-end;
 	font-family: 'Montserrat';
 	right: 2em;
 	padding: 1em;
@@ -595,6 +625,29 @@ article{
 		padding-left: 5%;
 		padding-top: 35px;
 		text-align: center;
+	}
+	/*********** work styling at min-width 900px ****************/
+	.ui-accordion-header{
+		font-size: 2.6rem;
+		padding-top: 0rem;
+		padding-bottom: 5rem;
+		line-height: 4rem;
+	}
+	.project_content{
+		display: flex;
+    flex-direction: row;
+    justify-content: center;
+		position: relative;
+		top: -70px;
+	}
+	.project_content img{
+		max-height: 300px;
+	}
+	.project_header p {
+    font-size: 1rem;
+    color: #a7582d;
+    margin-top: .8rem;
+    line-height: 1.5rem;
 	}
 }
 @media (min-width:1100px) {

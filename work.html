@@ -5,10 +5,10 @@
     <title> My Work | Naraly Serrano</title>
 
     <!-- stylesheet -->
-		<link type="text/css" rel="stylesheet" href="styles.css" />
+		<link type="text/css" rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="animate.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Playfair+Display:400,700,900i&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
-
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--[if lt IE 9]>
@@ -19,66 +19,112 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
+
     <!-- JQUERY UI accordion -->
-    <script src="js/accordion.js"></script>
     <script src="js/jquery-3.4.1.js"></script>
     <script src="js/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+    <script src="js/accordion.js"></script>
+
+    <!-- lightbox stylesheet -->
+    <link href="lightbox/css/lightbox.css" rel="stylesheet">
+
 
   </head>
 
   <body>
-    <div class="container">
+    <div id="container">
       <button class="hamburger">&#9776;</button>
 		  <button class="cross">&#735;</button>
 			<header>
 				<nav class="menu">
 					<ul>
+            <li><a href="index.html">home </a></li>
 						<li><a href="about.html">about</a></li>
-						<li><a href="#">work</a></li>
 						<li><a href="#">contact</a></li>
 					</ul>
 				</nav>
 
 				<nav class="desktop_menu">
 					<ul>
+					  <li><a href="index.html">home</a></li>
 						<li><a href="about.html">about</a></li>
-						<li><a href="#">work</a></li>
 						<li><a href="#">contact</a></li>
 					</ul>
 				</nav>
 			</header>
 
+
   <!-- IMPORTANT TO NOTE: panels class uses firs div as accordion header and second div as accordion content-->
-      <div id="panels">
-        <div><h1>Tony's Loot</h1>
-          <p>MINI DESCRIPTION HERE. </p>
+      <div id="panels" class="wrapper">
+
+        <div class="project_header animated fadeInLeft slower"><h1> Tony's Loot </h1>
+          <p>retro vintage store logo</p>
         </div>
         <div class="project_content">
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           <figure class="project_lightbox">
-            <img src="images/tonysloot_logo.png" alt="logo for online shop Tony's Loot">
+            <a href="images/tonysloot_logo.png" data-lightbox="image-1" data-title="Tony's Loot Logo"><img src="images/tonysloot_logo.png" alt="Tony's Loot Logo" class="project_content_image"></a>
           </figure>
         </div>
 
-        <div><h1>Travel Vida</h1></div>
+        <div class="project_header animated fadeInRight slower"><h1>Travel Vida</h1>
+          <p>social media campaign</p>
+        </div>
         <div class="project_content">
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           <figure class="project_lightbox">
-            <img src="images/travelvida_fb_final.gif" alt="animated gif for travel company Travel Vida">
+            <a href="images/travelvida_ig_final.jpg"  data-lightbox="travel-vida" data-title="Travel Vida Instagram"> <img src="images/travelvida_ig_final.jpg" alt="animated gif for travel company Travel Vida"> </a>
+            <br>
+            <a href="images/travelvida_fb_final.gif"  data-lightbox="travel-vida" data-title="Travel Vida Instagram"> <img src="images/travelvida_fb_final.gif" alt="animated gif for travel company Travel Vida"> </a>
           </figure>
         </div>
 
-        <div><h1>El Tesoro</h1></div>
+        <div class="project_header animated fadeInLeft slower"><h1>Florida Kids Eat Well</h1>
+          <p>logo redesign</p>
+        </div>
         <div class="project_content">
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           <figure class="project_lightbox">
-            <img src="images/eltesoro_wireframe_0Mobile.png" alt="Website wireframe redesign for El Tesoro">
+            <a href="images/design1_FloridaKidsEatWell.gif"  data-lightbox="floridaKidsEatWell" data-title="logo design 1 florida kids eat well"> <img src="images/design1_FloridaKidsEatWell.gif" alt="logo design 1 florida kids eat well"> </a>
+            <br>
+            <a href="images/design2_FloridaKidsEatWell.gif"  data-lightbox="floridaKidsEatWell" data-title="logo design 2 florida kids eat well"> <img src="images/design2_FloridaKidsEatWell.gif" alt="logo design 2 florida kids eat well"> </a>
           </figure>
+        </div>
+
+        <div class="project_header animated fadeInRight slower"><h1>El Tesoro</h1>
+          <p>restaurant homepage redesign </p>
+        </div>
+        <div class="project_content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <figure class="project_lightbox">
+            <a href="images/eltesoro_wireframe_0Mobile.png"  data-lightbox="el-tesoro" data-title="mobile wireframe redesign for El Tesoro"> <img src="images/eltesoro_wireframe_0Mobile.png" alt="mobile wireframe redesign for El Tesoro"> </a>
+            <br>
+            <a href="images/eltesoro_wireframe_0Web.png"  data-lightbox="el-tesoro" data-title="Website wireframe redesign for El Tesoro"> <img src="images/eltesoro_wireframe_0Web.png" alt="Website wireframe redesign for El Tesoro"> </a>
+          </figure>
+        </div>
+
+        <div class="project_header animated fadeInLeft slower"><h1>Street Food From Around the World</h1>
+          <p>digitial recipe book</p>
+        </div>
+        <div class="project_content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <figure>
+            <a href="http://ncserrano.com/media/streetfood_recipebook.pdf" class="" target="_blank">
+              <img src="images/streetfood_digital_cookbook.jpg" alt="book cover of digital recipe book. group of people eating in the street">
+             </a>
+          </figure>
+        </div>
+
+        <div class="project_header animated fadeInRight slower"><h1>A Raisin In The Sun </h1>
+        <p>ebook cover redesign</p>
+        </div>
+        <div class="project_content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <a href="images/EBookCover.jpg" data-lightbox="e-book" data-title="E-book cover redesign"><img src="images/EBookCover.jpg" alt="A Raisin in the Sun Redesign" class="project_content_image"></a>
         </div>
 
       </div>
-
-		<footer class="footer_line_top animated slideInRight"></footer>
+      <footer class="work_footer"></footer>
     </div>
 
 <!-- script for accordion -->
@@ -92,6 +138,9 @@
       });
     </script>
 
-      <script src="js/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+    <script src="js/hamburger.js"></script>
+    <!-- script for lightbox-->
+    <script src="js/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+    <script src="lightbox/js/lightbox.js"></script>
   </body>
 </html>
