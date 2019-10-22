@@ -304,6 +304,7 @@ article{
 	color: #1f1b3f;
 	opacity: .7;
 	font-size: 2.5rem;
+	font-style:italic;
 	line-height: 2rem;
 }
 
@@ -394,6 +395,9 @@ article{
 	.about_padding{
 		padding-top: 10px;
 	}
+	.footer_contact{
+		font-size: 1rem;
+	}
 }
 @media (min-width: 450px) {
 	.name{
@@ -411,6 +415,18 @@ article{
 	}
 	.about_padding{
 		padding-top: 20px;
+	}
+	.hello_contact{
+		padding-left: 30px;
+	}
+	.send_contact{
+		padding-right: 30px;
+	}
+	.email_contact{
+		padding-left: 30px;
+	}
+	.socialmedia_contact{
+		padding-right: 30px;
 	}
 }
 @media (min-width: 477px) and (max-width:530px) {
@@ -462,6 +478,15 @@ article{
 	.mobile_vertical_line {
 		height: 120%;
 	}
+	.hello_contact h1{
+		font-size: 3rem;
+	}
+	.send_contact h2{
+		font-size: 2rem;
+	}
+	.send_contact{
+	 	padding-top: 10px;
+	}
 }
 
 @media (min-width: 600px) {
@@ -483,6 +508,9 @@ article{
 	}
 	.about_padding{
 		padding-top: 30px;
+	}
+	.footer_contact{
+		font-size: 1.1rem;
 	}
 }
 @media (min-width:620px) {
@@ -524,6 +552,15 @@ article{
 	.mobile_vertical_line {
 		height: 135%;
 	}
+	.hello_contact h1{
+		font-size: 4rem;
+	}
+	.send_contact h2{
+		font-size: 2.25rem;
+	}
+	.send_contact{
+	 padding-top: 19px;
+	}
 }
 @media (min-width: 800px) {
 	.ui-accordion-header{
@@ -542,6 +579,9 @@ article{
 	}
 	.about_padding{
 		padding-top: 40px;
+	}
+	.footer_contact{
+		font-size: 1.3rem;
 	}
 }
 @media (min-width:900px) {
@@ -710,6 +750,9 @@ article{
 		padding-top: 35px;
 		text-align: center;
 	}
+	.hello_contact{
+		height: 40vh;
+	}
 	/*********** work styling at min-width 900px ****************/
 	.ui-accordion-header{
 		font-size: 2.6rem;
@@ -744,5 +787,17 @@ article{
 	}
 	.last_name{
 		font-size: 10.5rem;
+	}
+	.hello_contact h1{
+		font-size: 4.5rem;
+	}
+	.send_contact h2{
+		font-size: 3.25rem;
+	}
+	.send_contact{
+	 padding-top: 25px;
+	}
+	.footer_contact{
+		font-size: 1.5rem;
 	}
 }
