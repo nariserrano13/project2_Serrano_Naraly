@@ -19,7 +19,7 @@ body{
 }
 
 /************* STICKY FOOTER **********************/
-#container{
+.container{
 	display: flex;
 	min-height: 100vh;
 	flex-direction: column;
@@ -288,6 +288,16 @@ article{
 	display: flex;
 	flex-direction: column;
 	flex-grow: 1;
+/*
+	top: 125px;
+*/
+}
+
+.hello_contact{
+	padding-left: 15px;
+	height: 50vh;
+	display: flex;
+	align-items: flex-end;
 }
 
 .hello_contact h1{
@@ -295,19 +305,62 @@ article{
 	opacity: .7;
 	font-size: 2.5rem;
 	line-height: 2rem;
-	display: flex;
-	align-content: flex-end;
+}
+
+.send_contact{
+	padding-right: 15px;
+	text-align: right;
+	height: 30vh;
 }
 
 .send_contact h2{
 	color: #1f1b3f;
-	line-height: 1.5rem;
+	line-height: 1.3rem;
+	font-size: 1.6rem;
 }
 .footer_contact{
 	font-family: "Playfair Display";
-	padding-top: 0px;
-	width: 0;
+	font-size: .8rem;
+	color: #a7582d;
+	position: absolute;
+	bottom: 0;
+	height: 10vh;
+	width: 100%;
+	font-weight:bold;
 	display: flex;
+	flex-direction: row;
+}
+.footer_contact a{
+	color: #a7582d;
+	text-decoration: none;
+}
+.email_contact{
+		padding-left: 15px;
+}
+
+.socialmedia_contact{
+	display: flex;
+	flex-grow: 1;
+	align-items: baseline;
+	justify-content: flex-end;
+	padding-right: 15px;
+}
+.dot {
+  height: .3em;
+  width: .3em;
+  background-color: #a7582d;
+  border-radius: 50%;
+  display: inline-block;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.email_contact a:hover,
+.email_contact a:focus{
+  font-style: italic;
+}
+.socialmedia_contact a:hover,
+.socialmedia_contact a:focus{
+  font-style: italic;
 }
 
 /************ contact page ENDS ********************/
