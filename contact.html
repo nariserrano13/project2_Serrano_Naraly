@@ -9,7 +9,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <!-- favicon links-->
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
@@ -17,7 +16,7 @@
     <link rel="manifest" href="/site.webmanifest">
 
   <body>
-    <div class="container">
+    <div id="container">
       <button class="hamburger">&#9776;</button>
       <button class="cross">&#735;</button>
       <header>
@@ -38,15 +37,25 @@
         </nav>
       </header>
 
-      <main>
-        <div class="">
-          <p>Want to say hello?</p>
+      <main  class="contact_main_container">
+        <div class="hello_contact">
+          <h1>Want to say hello?</h1>
         </div>
-        <div class="">
-          <p>send an email and we can talk about your ideas</p>
+        <div class="send_contact">
+          <h2> send an email & we can talk about your ideas </h2>
         </div>
       </main>
 
+      <footer class="footer_contact">
+        <section class="email_contact">
+          <p><a href="contactform.html">contact@ncserrano.com</a></p>
+        </section>
+        <section class="socialmedia_contact">
+          <a>instagram</a>
+          <span class="dot"></span>
+          <a>linkedin</a>
+        </section>
+      </footer>
     </div>
     <script src="js/hamburger.js"></script>
   </body>
