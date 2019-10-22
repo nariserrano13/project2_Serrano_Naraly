@@ -541,6 +541,9 @@ article{
 	.ui-accordion-header{
 		font-size: 2rem;
 	}
+	.project_content{
+		padding-left: 36px;
+	}
 }
 @media (min-width:780px) {
 	.mobile_quote_padding{
@@ -551,6 +554,9 @@ article{
 	}
 	.mobile_vertical_line {
 		height: 135%;
+	}
+	.project_header p {
+		font-size: 1.2rem;
 	}
 	.hello_contact h1{
 		font-size: 4rem;
@@ -771,10 +777,13 @@ article{
 		max-height: 300px;
 	}
 	.project_header p {
-    font-size: 1rem;
+    font-size: 1.4rem;
     color: #a7582d;
     margin-top: .8rem;
     line-height: 1.5rem;
+	}
+	.project_content{
+		padding-left: 46px;
 	}
 }
 @media (min-width:1100px) {
